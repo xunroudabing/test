@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.baidu.mobads.demo.main"
+	android:versionCode="1" android:versionName="1.0" xmlns:tools="http://schemas.android.com/tools">
+
+	<!-- SDK运行在Android 1.5及以上版本 -->
+	<uses-sdk android:minSdkVersion="3" tools:ignore="UsesMinSdkAttributes"></uses-sdk>
+
+	<!-- 必须申明的权限 -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <!-- SDK 2.1新增权限，建议使用 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+	<!-- 以下为可选的权限，您可根据需要开启-->
+	<!-- 使用GPS获取用户精确定位信息 -->
+	<!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />   -->
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<!-- 注册AppActivity -->
+		<activity android:name="com.baidu.mobads.AppActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+		<!-- 您从百度移动联盟网站获取的APPSID -->
+		<meta-data android:name="BaiduMobAd_APP_ID" android:value="debug" /> 
+		<!-- 您从百度移动联盟网站获取的计费名 -->
+		<meta-data android:name="BaiduMobAd_APP_SEC" android:value="debug" />
+  
+		<activity android:name=".BaiduSDKDemo" android:label="@string/app_name"> 
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" /> 
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".AdvancedLayout" android:label="@string/advanced" 
+            android:configChanges="orientation|keyboardHidden"/>
+		<activity android:name=".SimpleDeclaringLayout" android:label="@string/simple_declaring" 
+            android:configChanges="orientation|keyboardHidden"/>
+		<activity android:name=".SimpleCodingLayout" android:label="@string/simple_coding" 
+            android:configChanges="orientation|keyboardHidden" />
+		<!-- android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" -->
+	</application>
+</manifest>

@@ -1,0 +1,22 @@
+# view res/layout/simple_declaring.xml #generated:6
+-keep class com.baidu.mobads.AdView { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.baidu.mobads.AppActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.baidu.mobads.demo.main.AdvancedLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.baidu.mobads.demo.main.BaiduSDKDemo { <init>(...); }
+
+# view res/layout/simple_coding.xml #generated:6
+# view res/layout/simple_declaring.xml #generated:13
+-keep class com.baidu.mobads.demo.main.ConcurrencyMonitorView { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.baidu.mobads.demo.main.SimpleCodingLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.baidu.mobads.demo.main.SimpleDeclaringLayout { <init>(...); }
+

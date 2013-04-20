@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<com.baidu.mobads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" />
+	
+	
+    <com.baidu.mobads.demo.main.ConcurrencyMonitorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:id="@+id/anims" >	
+			
+			<!--<Button android:text="anim1" 
+				android:id="@+id/anim1"
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+			<Button android:text="anim2" 
+				android:id="@+id/anim2"
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+			<Button android:text="anim3" 
+				android:id="@+id/anim3"
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+			<Button android:text="anim4" 
+				android:id="@+id/anim4"
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+			<Button android:text="anim5" 
+				android:id="@+id/anim5"
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+			<Button android:text="anim6" 
+				android:id="@+id/anim6"
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+			<Button android:text="anim7" 
+				android:id="@+id/anim7" 
+				android:layout_width="100px" 
+				android:layout_height="wrap_content"></Button>
+				
+	--></LinearLayout>
+</RelativeLayout>
